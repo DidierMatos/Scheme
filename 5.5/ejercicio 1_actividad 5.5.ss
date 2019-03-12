@@ -1,0 +1,8 @@
+(printf " Funcion Acepta un numero y retorna si el numero es mayor o igual a 10")
+(define (numero x)
+  (if ( >= x 10)
+      (printf "El numero es mayor o igual a 10"))
+  (if (< x 10)
+      (printf "El numero es menor a 10"))
+  )
+(numero (read))

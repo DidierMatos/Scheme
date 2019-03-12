@@ -1,0 +1,78 @@
+#lang racket
+(require racket/gui)
+
+;This is our main window VENTANA
+(define my-window (new frame%
+                       [label "DIETA SANA"]
+                       [width 400]
+                       [height 300]
+                       [style '(fullscreen-button)]
+                       [alignment '(left top)]))
+(new canvas% [parent my-window]
+     [paint-callback (lambda (canvas dc)
+                       (send dc set-scale 0.68 1.5)
+                       (send dc set-text-foreground "blue")
+                       ;(send dc draw-text "Sistema orientado a la salud. En este modulo\n" 0 0)
+                       (send dc draw-text "Este módulo calculara tu Indice de Masa Corporal. Favor de ingresar los datos" 0 0))])
+
+;This is the textfield where you will enter your name. We declare the textfield before the following PRIMER CUADRO
+;gui-elements because it is the first element in the window to be placed on the top
+(define name-input (new text-field%
+                        [parent my-window]
+                        [label "Ingresa tu peso en kilogramos aquí->"]
+                        [min-width 150]
+                        [min-height 30]
+                        [vert-margin 10]
+                        [horiz-margin 10]
+                        [stretchable-width #t]
+                        [stretchable-height #f]))
+
+
+
+;This is the textfield where you will enter your name. We declare the textfield before the following SEGUNDO CUADRO
+;gui-elements because it is the first element in the window to be placed on the top
+(define name-input2 (new text-field%
+                        [parent my-window]
+                        [label "Ingresa tu estatura en metros aquí->"]
+                        [min-width 150]
+                        [min-height 30]
+                        [vert-margin 10]
+                        [horiz-margin 10]
+                        [stretchable-width #t]
+                        [stretchable-height #f]))
+
+;With this statis message text we tell the user that the length of any name is truncated to 7 TEXTVIEW AVISO
+(define msg (new message%
+                 [parent my-window]
+                 [label "Respuesta: 24.91349, Estas con IMC normal"]
+                 [vert-margin 2]
+                 [horiz-margin 10]))
+
+
+
+;Here comes the button for starting the permutation calculations BOTON
+(define start-permutation (new button%
+                               [parent my-window]
+                               [label "Start"]
+                               [vert-margin 10]
+                               [horiz-margin 10]
+                               [callback (lambda (button event)
+                                           ;(do-permutation (send name-input get-value)#|text-output|#))]))
+                                           (do-permutation(send name-input get-value) msg))]))
+
+;This function does the permutations and inserts them in the text output. FUNCION
+
+(define (do-permutation n out)
+
+  (cond ;utilizando cond, else es opcional de poner.
+    [(and(>= n 18)(<= n 24.9))(begin (display "Normal"))];Begin agrupa en dos partes el codigo y asi Racket determina cual begin ejecutar primero al cumplirse la condicion o si no pasa a la sig.
+    [(and(>= n 25)(<= n 26.9))(begin (display "Sobrepeso"))]
+    [(and(>= n 27)(<= n 29.9))(begin (display "Obesidad"))]
+    )
+  )
+
+  ;(send name-input get-value))
+
+
+;Make window visible
+(send my-window show #t)

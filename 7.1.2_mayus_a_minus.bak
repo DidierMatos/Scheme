@@ -1,0 +1,9 @@
+(printf "¿Alfabetico y Minuscula? se convierte a mayuscula y reverso")
+(define(caracter car1)
+  (cond
+    [(and(char-alphabetic? car1)(char-lower-case? car1))(begin (display "Es un caracter alfabetico y minuscula y lo convertiremos a Mayuscula"))(begin (displayln (char-upcase car1)))]
+    [(and(char-alphabetic? car1)(char-upper-case? car1))(begin (display "Es un caracter alfabetico y minuscula y lo convertiremos a Mayuscula"))(begin (displayln (char-downcase car1)))]
+  )
+ )
+
+(caracter #\A)

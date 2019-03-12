@@ -1,0 +1,10 @@
+(printf "¿comparar 2 caracteres y devolver si son iguales, o si el primero va antes que el segundo o reverso?")
+(define(caracter car1 car2)
+  (cond
+    [(char-ci=? car1 car2)(begin (display "Es el mismo caracter"))]
+    [(char-ci<? car1 car2) (begin (display "El caracter 1 esta antes que el caracter 2"))]
+    [(char-ci>? car1 car2)(begin (display "El caracter 1 esta despues que el caracter 1"))]
+  )
+ )
+
+(caracter (read)(read))

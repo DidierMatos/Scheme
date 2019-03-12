@@ -1,0 +1,6 @@
+(define (impuesto a)
+  (* a 0.15))
+
+
+
+

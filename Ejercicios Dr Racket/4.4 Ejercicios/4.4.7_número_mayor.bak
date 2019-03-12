@@ -1,0 +1,2 @@
+(string-append "Numero mayor entre un grupo de 5 números")
+(max 8 1 6 10 4)

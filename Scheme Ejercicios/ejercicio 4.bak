@@ -1,0 +1,21 @@
+(string-append "Para hacer uso de de listas")
+(append '(1 2) '(3 4))
+
+(string-append "Para declarar numeros reales")
+( * 3.14 5.2)
+
+(string-append "Para declarar numeros complejos")
+(+ 1+2i 3+2i)
+
+(string-append "Para declarar caracteres")
+#\u03BB
+(string-append "Para declarar numeros binarios")
+#b111
+(string-append "Para declarar numeros enteros")
+(+ 8 1)
+(string-append "Para declarar numeros racionales")
+(+ 3/5 5/2)
+(string-append "Practicando con boleanos")
+(not #f)
+(and 0 #f (error " Aqui no pasa"))
+(or #f 0 ("aqui no pasa"))

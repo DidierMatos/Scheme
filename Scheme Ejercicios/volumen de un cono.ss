@@ -1,0 +1,5 @@
+(string-append "Calculo volumen de un cono")
+(define pi 3.1416)
+(define (volumen pi radio altura)
+ (*(/ 1 3) (* pi(*(expt radio 2)  altura))))
+(volumen pi 8 18)

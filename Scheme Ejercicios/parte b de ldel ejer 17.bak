@@ -1,0 +1,7 @@
+(printf " B) funcion que devuelva T o F si el numero es menor a 20")
+(define ( numero x)
+   (if (< x 20)
+  (printf "el numero es menor"))
+  (if (> x 20)
+  (printf "continua"))
+  )

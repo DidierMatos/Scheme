@@ -1,0 +1,3 @@
+(string-append "Numeros aleatorios")
+(random 100 )
+(random 10)

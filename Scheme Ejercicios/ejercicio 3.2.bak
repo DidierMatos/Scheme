@@ -1,0 +1,10 @@
+(string-append "el" "resultado" "es:")
+
+(define Gravedad 9.8)
+(define  Pi 3.1416)
+(define Kilogramo 1000)
+(define Velocidad 100)
+
+(* Gravedad Pi)
+(+ Kilogramo Velocidad)
+(/ Velocidad Pi)

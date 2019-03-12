@@ -1,0 +1,8 @@
+(define Pi 3.1415)
+(+ Pi)
+(define Gravedad 9.8)
+(+ Gravedad)
+(define Kilogramo 1000)
+(+ Kilogramo)
+(define Velocidad 50)
+(+ Velocidad)

@@ -1,0 +1,12 @@
+(define(EsVocal caracter);deetecta si el valor ingresado es vocal o no
+  (cond
+  [(equal? caracter #\a)]
+  [(equal? caracter #\e)]
+  [(equal? caracter #\i)]
+  [(equal? caracter #\o)]
+  [(equal? caracter #\u)]
+  (else(not #t))
+  )
+ )
+
+(EsVocal #\h)

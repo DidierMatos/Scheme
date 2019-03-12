@@ -1,0 +1,7 @@
+(printf " D) Funcion Acepta un numero y retorna t si esta en el intervalo")
+(define (numero x)
+ (and ( >= x 1) (<= x 3))
+  (and  (>= x 9) (<= x 11))
+  )
+ (numero (read))
+ 

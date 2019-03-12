@@ -1,0 +1,8 @@
+(string-append "Calculo volumen de cilindro")
+(define Pi 3.14)
+(define (vol-cilindro radio altura)
+(* (* radio radio) Pi altura))
+(define (lec-vol-cilindro)
+(display "asignar valor a radio y altura")
+(vol-cilindro (read) (read)))
+(vol-cilindro 2 5 )

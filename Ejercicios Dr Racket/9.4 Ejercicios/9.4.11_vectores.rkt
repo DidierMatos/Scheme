@@ -1,0 +1,6 @@
+(define (N)
+  (display "Ingrese un numero entero: ")
+(read))
+(define (vect num)
+  (display "El vector creado es: ")(make-vector num -1))
+(vect (N))

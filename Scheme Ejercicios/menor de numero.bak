@@ -1,0 +1,2 @@
+(string-append "Numero menor de un grupo de  numeros")
+(min 2 7 3 5 0)

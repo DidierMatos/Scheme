@@ -1,0 +1,5 @@
+(printf "Ganancias de un  teatro por funcion")
+(define (ganancia-total clientes)
+  (-(*  clientes 10 )(+ 300 2)))
+
+(ganancia-total 100)

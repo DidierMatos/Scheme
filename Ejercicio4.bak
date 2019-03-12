@@ -1,0 +1,16 @@
+(define real 1.40)
+(define real2 2.60)
+(define entero 3)
+(define racional 1/4)
+
+;La-suma-de-num-reales-es:
+(+ real real2)
+;La-resta-de-num-real-y-entero-es:
+(- real entero)
+;La-suma-de-num-real-y-entero-es:
+(+ real2 entero)
+
+#\u03BB
+#\a
+#\space
+

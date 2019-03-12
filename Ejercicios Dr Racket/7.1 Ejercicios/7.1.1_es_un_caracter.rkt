@@ -1,0 +1,6 @@
+(printf "¿Es un caracter?")
+(define(caracter car1)
+  (char? car1)
+  )
+
+(caracter #\A)

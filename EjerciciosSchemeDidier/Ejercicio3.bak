@@ -1,0 +1,9 @@
+(define Gravedad 9.8)
+(define Kilogramo 1000)
+(define Velocidad 50)
+
+(+ Velocidad Kilogramo)
+(* Gravedad Kilogramo)
+(/ Velocidad Gravedad )
+(number? Gravedad) ;evalua un valor y nos dice si es entero
+(floor Gravedad) ;Aproxima a un numero a entero

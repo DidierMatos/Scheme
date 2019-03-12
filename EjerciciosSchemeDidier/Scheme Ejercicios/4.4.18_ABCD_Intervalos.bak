@@ -1,0 +1,21 @@
+(printf " A) Ingresa un número y retorna true si esta dentro del intervalo (3,7]")
+(define (numero a)
+  (and ( > a 3) (<= a 7)))
+ (numero (read))
+
+ (printf " B) Ingresa un número y retorna true si esta dentro del intervalo [3,7]")
+(define (numero x)
+  (and ( >= x 3) (<= x 7)))
+ (numero (read))
+
+ (printf " C) Ingresa un número y retorna true si esta dentro del intervalo [3,9)")
+(define (numero x)
+  (and ( >= x 3) (< x 9)))
+ (numero (read))
+
+ (printf "D) Ingresa un número y retorna true si esta dentro del intervalo (3,9) (9,11)")
+(define (numero x)
+ (and ( >= x 1) (<= x 3))
+  (and  (>= x 9) (<= x 11))
+  )
+ (numero (read))

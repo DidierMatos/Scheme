@@ -1,0 +1,4 @@
+(string-append "el" "resultado" "es:")
+(define pi 3.1416)
+(define x 3)
+(* pi x )
